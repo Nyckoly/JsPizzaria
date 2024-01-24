@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
         <title> JS Pizzaria </title>
     </head>
     <body>
@@ -11,15 +13,46 @@
                 <span class="topo__titulo">Menu</span>
             </h1>
         </header>
-        <main>
+        <main class="conteudo">
              <section class="pizzas-cards">
-                <div class="pizza-cards__img">
-                    <img src="" alt="" class="pizza-cards__img">
-                    <span class="pizza-cards__preco">R$99,99</span>
-                    <span class="pizza-cards__titulo">Título</span>
+                <div class="pizzas-cards__item">
+                    <img src="img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
+                    <a class="pizzas-cards__btn-add" href="#modal">
+                        <span class="fa-solid fa-circle-plus"></span>
+                    </a>
+                    <span class="pizzas-cards__preco">R$99,99</span>
+                    <span class="pizzas-cards__titulo">Título</span>
+                    <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
+                </div>
+                <div class="pizzas-cards__item">
+                    <img src="img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
+                    <a class="pizzas-cards__btn-add" href="#modal">
+                        <span class="fa-solid fa-circle-plus"></span>
+                    </a>
+                    <span class="pizzas-cards__preco">R$99,99</span>
+                    <span class="pizzas-cards__titulo">Título</span>
+                    <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
+                </div>
+                <div class="pizzas-cards__item">
+                    <img src="img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
+                    <a class="pizzas-cards__btn-add" href="#modal">
+                        <span class="fa-solid fa-circle-plus"></span>
+                    </a>
+                    <span class="pizzas-cards__preco">R$99,99</span>
+                    <span class="pizzas-cards__titulo">Título</span>
+                    <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
+                </div>
+                <div class="pizzas-cards__item">
+                    <img src="img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="pizzas-cards__img">
+                    <a class="pizzas-cards__btn-add" href="#modal">
+                        <span class="fa-solid fa-circle-plus"></span>
+                    </a>
+                    <span class="pizzas-cards__preco">R$99,99</span>
+                    <span class="pizzas-cards__titulo">Título</span>
                     <p class="pizzas-cards__texto">Dois hamburguers, alface, molho...</p>
                 </div>
              </section>
+
              <aside class="carrinho">
                 <h1 class="carrinha__titulo">Suas Pizzas</h1>
                 <div class="carrinho__item">
@@ -34,18 +67,53 @@
                 </div>
              </aside>
         </main>
+
         <footer class="rodape">
             <address class="rodape__endereco">
-                Rua das Margaridas, 25 Centro São Paulo SP
+                Rua das Margaridas, 25
+                <br> Centro São Paulo SP
             </address>
-            <div class="rodape__desenvolvedor">
-                Desenvolvido por JPTD Soluções Digitais
-            </div>
             <div class="rodape__redes-sociais">
-                <img src="" alt="" class="rodape__logo-face">
-                <img src="" alt="" class="rodape__logo-whatsapp">
-                <img src="" alt="" class="rodape__logo-insta">
+                <p>Siga-nos nas redes sociais:</p>
+                <span class="fa-brands fa-whatsapp"></span>
+                <span class="fa-brands fa-facebook"></span>
+                <span class="fa-brands fa-instagram"></span>
+            </div>
+            <div class="rodape__desenvolvedor">
+                Desenvolvido por <br> JPTD Soluções Digitais
             </div>
         </footer>
+
+        <div id="modal" class="background-modal">
+            <div class="modal-pizza">
+                <img src="img/img-produto01.png" alt="Imagem da Pizza Mozzarella" class="modal-pizza__img">
+                <div class="modal-pizza__detalhes">
+                    <a href="#" class="modal-pizza__btn-fechar">Voltar</a>
+                    <h1 class="modal-pizza__tx-titulo">Sabor da Pizza</h1>
+                    <div class="modal-pizza__tx-ingredientes">Lorem ipsum ingredientius</div>
+                    <div class="modal-pizza__tx-tamanho">Tamanho</div>
+                    <div class="modal-pizza__controle-tamanhos">
+                        <div class="modal-pizza__tamanho">Pequena <span>320g</span> </div>
+                        <div class="modal-pizza__tamanho">Média <span>530g</span> </div>
+                        <div class="modal-pizza__tamanho">Grande <span>860g</span> </div>
+                    </div>
+                    <div class="modal-pizza__tx-preco">Preço</div>
+                    <div class="modal-pizza__qtd">
+                        <div class="modal-pizza__tx-valor"> R$ 99,99</div>
+                        <div class="modal-pizza__controle-qtd">
+                            <button class="modal-pizza__menos">-</button>
+                            <div class="modal-pizza__tx-qtd">1</div>
+                            <button class="modal-pizza__mais">+</button>
+                        </div>
+                    </div>
+                    <div class="modal-pizza__btns">
+                        <button class="modal-pizza__btn modal-pizza__btn--adicionar">Adicionar ao carrinho</button>
+                        <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/b8bf04cdf7.js" crossorigin="anonymous"></script>
     </body>
 </html>
