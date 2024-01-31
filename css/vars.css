@@ -1,0 +1,15 @@
+:root{
+    --titulo: 24px;
+    --valor: 24px;
+    --destaques: 16px;
+    --paragrafo: 16px;
+    --preset--text-transform: uppercase;
+    --preto: #000000;
+    --cinza: #D9D9D9;
+    --cinza-claro: #EEEEEE;
+    --branco: #ffffff;
+    --azul-claro: #E5F4FF;
+    --azul: #1298F8;
+    --verde-sucesso: #48D05F;
+    --vermelho-atencao: #E92929;
+}
