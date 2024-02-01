@@ -219,3 +219,90 @@
 .modal-pizza__btn--cancelar{
     background-color: var(--vermelho-atencao);
 }
+
+/* CARRINHO */
+
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-claro);
+    padding: 20px 8px;
+    gap: 10px;
+}
+.carrinho__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.carrinho__txt{
+    display: flex;
+    flex-direction: column;
+    padding-right: 98px;
+    gap: 14px;
+    text-transform: uppercase;
+    font-family: "InterRegular";
+}
+.carrinho__pizza{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.carrinho__img{
+    width: 73px;
+    height: 73px;
+}
+.carrinho__qtd-controle{
+    font-family: "InterBold";
+    padding: 16px 0;
+}
+.btn-background{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-color: var(--cinza-claro);
+}
+.btn--adicionar, .btn--remover{
+    width: 42px;
+    height: 40px;
+    border: none;
+    background: none;
+}
+.carrinho__qtd{
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+.carrinho__calculos{
+    display: flex;
+    flex-direction: column;
+}
+.carrinho__valores-calculos{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--azul);
+    padding: 24px 8px;
+    gap: 16px;
+}
+.tx--titulo, .tx--item{
+    font-size: 24px;
+    font-family: "InterBold";
+}
+.tx--item{
+    color: var(--azul);
+}
+.tx--valor{
+    font-family: "InterLight";
+    font-size: 24px;
+}
+.tx--total, .tx--valor-total{
+    font-size: 28px;
+    font-family: "InterBold";
+}
+.btn--finalizar-compra{
+    padding: 16px 32px;
+    border-radius: 20px;
+    background: var(--verde-sucesso);
+    border: none;
+    color: var(--branco);
+}
